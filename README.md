@@ -50,7 +50,7 @@ Considering these difficulties, we decided to build the lenet model implement th
 
 ## 3. ResNet50
 
-ResNet-50 is a convolutional neural network that is 50 layers deep. 
+ResNet-50 is a convolutional neural network that is 50 layers deep. ResNet (Residual Neural Network) [3] introduced a novel architecture with “skip connections” and features heavy batch normalization. Thanks to this skip connections it is possible to build deeper models while avoiding accuracy saturation a degradation and getting faster convergence than plain models.
 
 `ResNet50.ipynb` code is inspired by https://www.kaggle.com/code/danushkumarv/pneumonia-detection-resnet
 
@@ -73,3 +73,5 @@ To run the colab notebookes attached, it is necesary to download the data (https
 [1] https://www.mayoclinic.org/es-es/diseases-conditions/pneumonia/symptoms-causes/syc-20354204#:~:text=La%20neumon%C3%ADa%20es%20una%20infecci%C3%B3n,escalofr%C3%ADos%20y%20dificultad%20para%20respirar.
 
 [2] Lecun, Y. et al. (1998) 'LeNet', Proceedings of the IEEE, (November), pp. 1-46.
+
+[3] He Kaiming, Zhang Xiangyu, Ren Shaoqing, and Sun Jian. 2016. Deep residual learning for image recognition. In CVPR.
