@@ -30,7 +30,9 @@ First, we performed an Exploratory Anlysis of the Data that can be found in the 
 
 ## 1. LeNet5 with BigDL
 
-Code inspired by https://github.com/intel-analytics/BigDL/blob/main/python/dllib/examples/lenet/lenet.py
+LeNet-5 was one of the first convolutional applications of image processing. It was originally created for digit classification. Its architecture is made up of 7 layers excluding the input layer. The 7 layers consist of 3 convolutional layers, 2 subsampling layers and 2 fully connected layers. 
+
+`LeNet5_BigDL.ipynb` code is inspired by https://github.com/intel-analytics/BigDL/blob/main/python/dllib/examples/lenet/lenet.py
 
 We found out that functions and methods implemented in the bigdl.dllib library are sometimes pretty different from original keras methods and functions which complicated the building of different models implement the bigdl.dllib library.
 
@@ -39,14 +41,14 @@ Considering these difficulties, we decided to build the lenet model implement th
 
 ## 2. Generic CovNet
 
-Code inspired by https://www.kaggle.com/code/karnikakapoor/pneumonia-diagnosis-convnet-model
+`CovNet.ipynb` code is inspired by https://www.kaggle.com/code/karnikakapoor/pneumonia-diagnosis-convnet-model
 
 
 ## 3. ResNet50
 
 ResNet-50 is a convolutional neural network that is 50 layers deep. 
 
-Code inspired by https://www.kaggle.com/code/danushkumarv/pneumonia-detection-resnet
+`ResNet50.ipynb` code is inspired by https://www.kaggle.com/code/danushkumarv/pneumonia-detection-resnet
 
 
 ## Conclusions
