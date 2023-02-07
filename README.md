@@ -29,11 +29,15 @@ Code inspired by https://github.com/intel-analytics/BigDL/blob/main/python/dllib
 
 ## 2. Resnet50
 
+ResNet-50 is a convolutional neural network that is 50 layers deep. 
 Code inspired by https://www.kaggle.com/code/danushkumarv/pneumonia-detection-resnet
 
 ## 3. CovNet
 
 Code inspired by https://www.kaggle.com/code/karnikakapoor/pneumonia-diagnosis-convnet-model
+
+## Conclusions
+
 
 
 ### Requirements
