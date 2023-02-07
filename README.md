@@ -18,14 +18,17 @@ Signs and symptoms of pneumonia may include the following:
 - Nausea, vomiting or diarrhea
 - Shortness of breath
 
-The models included in this repository, serve to predict whether a patient has pneumonia or not from an X-ray image of their lungs. The data used to train, validate and test these models can be downloaded in https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia. First, we performed an Exploratory Anlysis of the Data (`Data_Exploration.
+The models included in this repository, serve to predict whether a patient has pneumonia or not from an X-ray image of their lungs. The data used to train, validate and test these models can be downloaded in https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia. 
 
-### Requirements
-
-To run the colab notebookes attached, it is necesary to download the data (https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) and upload it to yout Colab Notebook folder in your Google Drive. 
+First, we performed an Exploratory Anlysis of the Data that can be found in the `Data_exploration.ipynb` notebook. Then, we proceed to generate the following models: 
 
 ## 1. Lenet_BigDL
 
 ## 2. Resnet50
 
 ## 3. CovNet
+
+
+### Requirements
+
+To run the colab notebookes attached, it is necesary to download the data (https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) and upload it to yout Colab Notebook folder in your Google Drive. 
