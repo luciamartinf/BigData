@@ -4,6 +4,8 @@
 
 ## Introduction
 
+https://www.mayoclinic.org/es-es/diseases-conditions/pneumonia/symptoms-causes/syc-20354204#:~:text=La%20neumon%C3%ADa%20es%20una%20infecci%C3%B3n,escalofr%C3%ADos%20y%20dificultad%20para%20respirar.
+
 Pneumonia is an infection that inflames the air sacs of one or both lungs. The air sacs may fill with fluid or pus (purulent material), causing coughing up phlegm or pus, fever, chills and shortness of breath. Various microorganisms, such as bacteria, viruses and fungi, can cause pneumonia.
 Signs and symptoms of pneumonia vary from moderate to severe and depend on several factors, such as the type of germ that caused the infection, age and general health. Moderate signs and symptoms are often similar to those of a cold or the flu, but last longer.
 Signs and symptoms of pneumonia may include the following:
@@ -16,7 +18,11 @@ Signs and symptoms of pneumonia may include the following:
 - Nausea, vomiting or diarrhea
 - Shortness of breath
 
-The models included in this repository, serve to predict whether a patient has pneumonia or not with an X-ray image of their lungs:
+The models included in this repository, serve to predict whether a patient has pneumonia or not from an X-ray image of their lungs. The data used to train, validate and test these models can be downloaded in https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia. First, we performed an Exploratory Anlysis of the Data (`Data_Exploration.
+
+### Requirements
+
+To run the colab notebookes attached, it is necesary to download the data (https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) and upload it to yout Colab Notebook folder in your Google Drive. 
 
 ## 1. Lenet_BigDL
 
