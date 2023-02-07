@@ -22,11 +22,18 @@ The models included in this repository, serve to predict whether a patient has p
 
 First, we performed an Exploratory Anlysis of the Data that can be found in the `Data_exploration.ipynb` notebook. Then, we proceed to generate the following models: 
 
-## 1. Lenet_BigDL
+## 1. LeNet5 with BigDL
+
+Code inspired by https://github.com/intel-analytics/BigDL/blob/main/python/dllib/examples/lenet/lenet.py
+
 
 ## 2. Resnet50
 
+Code inspired by https://www.kaggle.com/code/danushkumarv/pneumonia-detection-resnet
+
 ## 3. CovNet
+
+Code inspired by https://www.kaggle.com/code/karnikakapoor/pneumonia-diagnosis-convnet-model
 
 
 ### Requirements
