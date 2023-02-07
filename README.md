@@ -20,24 +20,39 @@ Signs and symptoms of pneumonia may include the following:
 
 The models included in this repository, serve to predict whether a patient has pneumonia or not from an X-ray image of their lungs. The data used to train, validate and test these models can be downloaded in https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia. 
 
-First, we performed an Exploratory Anlysis of the Data that can be found in the `Data_exploration.ipynb` notebook. Then, we proceed to generate the following models: 
+First, we performed an Exploratory Anlysis of the Data that can be found in the `Data_exploration.ipynb` notebook. Then, we proceed to generate different deep learning models based on convolutional neural network. 
+
+The following steps were involved in the **convolutional neural network** model building:
+
+- Initialising the Convnet
+
+- Defining by adding layers
+
+- Compiling the Convnet
+
+- Train the Convnet
+
+- Testing on the test set following models: 
 
 ## 1. LeNet5 with BigDL
 
 Code inspired by https://github.com/intel-analytics/BigDL/blob/main/python/dllib/examples/lenet/lenet.py
 
+## 2. CovNet
 
-## 2. Resnet50
-
-ResNet-50 is a convolutional neural network that is 50 layers deep. 
-Code inspired by https://www.kaggle.com/code/danushkumarv/pneumonia-detection-resnet
-
-## 3. CovNet
+A Convolutional Neural Network, also known as CNN or ConvNet, is a class of neural networks that specializes in processing data that has a grid-like topology, such as an image. A digital image is a binary representation of visual data. It contains a series of pixels arranged in a grid-like fashion that contains pixel values to denote how bright and what color each pixel should be.
 
 Code inspired by https://www.kaggle.com/code/karnikakapoor/pneumonia-diagnosis-convnet-model
 
+## 3. Resnet50
+
+ResNet-50 is a convolutional neural network that is 50 layers deep. 
+
+Code inspired by https://www.kaggle.com/code/danushkumarv/pneumonia-detection-resnet
+
 ## Conclusions
 
+Still, the convnet model does not reach de accuracy levels of the resnet50 model (around 89% accuracy on the test set).
 
 
 ### Requirements
