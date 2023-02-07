@@ -30,9 +30,11 @@ First, we performed an Exploratory Anlysis of the Data that can be found in the 
 
 ## 1. LeNet5 with BigDL
 
-LeNet-5 was one of the first convolutional applications of image processing. It was originally created for digit classification. Its architecture is made up of 7 layers excluding the input layer. The 7 layers consist of 3 convolutional layers, 2 subsampling layers and 2 fully connected layers. 
+LeNet-5 was one of the first convolutional applications of image processing [2]. It was originally created for digit classification. Its architecture is made up of 7 layers excluding the input layer. The 7 layers consist of 3 convolutional layers, 2 subsampling layers and 2 fully connected layers. 
 
 `LeNet5_BigDL.ipynb` code is inspired by https://github.com/intel-analytics/BigDL/blob/main/python/dllib/examples/lenet/lenet.py
+
+**Accuracy: 0.8125**
 
 We found out that functions and methods implemented in the bigdl.dllib library are sometimes pretty different from original keras methods and functions which complicated the building of different models implement the bigdl.dllib library.
 
@@ -43,6 +45,8 @@ Considering these difficulties, we decided to build the lenet model implement th
 
 `CovNet.ipynb` code is inspired by https://www.kaggle.com/code/karnikakapoor/pneumonia-diagnosis-convnet-model
 
+**Accuracy: 0.8478**
+
 
 ## 3. ResNet50
 
@@ -50,30 +54,22 @@ ResNet-50 is a convolutional neural network that is 50 layers deep.
 
 `ResNet50.ipynb` code is inspired by https://www.kaggle.com/code/danushkumarv/pneumonia-detection-resnet
 
+**Accuracy: 0.8958**
+
 
 ## Conclusions
 
-We observe that the model can still improve a lot since we are obtained a pretty high Loss. However, the accuracy obtained is not so bad. This shows the potential of this model, with further training and using more data, we could expect some promising results
+Regarding the LeNet5 model we observe that it can still improve a lot since we obtained a pretty high loss. However, the accuracy obtained (81.25%) is not so bad. This shows the potential of this model, with further training and using more data, we could expect some promising results. 
 
-The results of this model are very good (84.8% accuracy).
-
-163/163 [==============================] - 1149s 7s/step - loss: 0.1887 - accuracy: 0.9237
-Train Loss:  0.1886528730392456
-Train Accuracy:  0.9236963391304016
-312/312 [==============================] - 142s 456ms/step - loss: 0.2596 - accuracy: 0.8958
-
-Test loss:  0.2596129775047302
-Test Accuracy:  0.8958333134651184
-
-Resnet50 shows that we could create a model with a great number of layers and reach very good results, as we can see in the accuracy of the train dataset
-
-Still, the convnet model does not reach de accuracy levels of the resnet50 model (around 89% accuracy on the test set).
+However, the best results are shown for the ResNet50 model. It has a great number of layers and reaches the best results (89.58%). Nevertheless, the generic CovNet model shows also some promising results (84.78% accuracy) 
 
 
-### Requirements
+## Requirements
 
 To run the colab notebookes attached, it is necesary to download the data (https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) and upload it to yout Colab Notebook folder in your Google Drive. 
 
 ## References
 
 [1] https://www.mayoclinic.org/es-es/diseases-conditions/pneumonia/symptoms-causes/syc-20354204#:~:text=La%20neumon%C3%ADa%20es%20una%20infecci%C3%B3n,escalofr%C3%ADos%20y%20dificultad%20para%20respirar.
+
+[2] Lecun, Y. et al. (1998) 'LeNet', Proceedings of the IEEE, (November), pp. 1-46.
