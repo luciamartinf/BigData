@@ -19,29 +19,25 @@ Signs and symptoms of pneumonia may include the following:
 
 The models included in this repository, serve to predict whether a patient has pneumonia or not from an X-ray image of their lungs. The data used to train, validate and test these models can be downloaded in https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia. 
 
-First, we performed an Exploratory Anlysis of the Data that can be found in the `Data_exploration.ipynb` notebook. Then, we proceed to generate different deep learning models based on convolutional neural network. The following steps were involved in the convolutional neural network model building:
+First, we performed an Exploratory Anlysis of the Data that can be found in the `Data_exploration.ipynb` notebook. Then, we proceed to generate different deep learning models based on convolutional neural network. A Convolutional Neural Network, also known as CNN or ConvNet, is a class of neural networks that specializes in processing data that has a grid-like topology, such as an image. The following steps were involved in the convolutional neural network model building:
 
-- Initialising the model
+1. Initialising the model
+2. Defining by adding layers
+3. Compiling the model (not necessary for the ResNet50 Model)
+4. Fitting (training) the model 
+5. Evaluate the model with the test dataset
 
-- Defining by adding layers
 
-- Compiling the model
-
-- Fitting (training) the model 
-
-- Evaluate the model with the test dataset
 
 ## 1. LeNet5 with BigDL
 
 Code inspired by https://github.com/intel-analytics/BigDL/blob/main/python/dllib/examples/lenet/lenet.py
 
-## 2. CovNet
-
-A Convolutional Neural Network, also known as CNN or ConvNet, is a class of neural networks that specializes in processing data that has a grid-like topology, such as an image. A digital image is a binary representation of visual data. It contains a series of pixels arranged in a grid-like fashion that contains pixel values to denote how bright and what color each pixel should be.
+## 2. Generic CovNet
 
 Code inspired by https://www.kaggle.com/code/karnikakapoor/pneumonia-diagnosis-convnet-model
 
-## 3. Resnet50
+## 3. ResNet50
 
 ResNet-50 is a convolutional neural network that is 50 layers deep. 
 
