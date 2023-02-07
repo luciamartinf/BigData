@@ -28,14 +28,19 @@ First, we performed an Exploratory Anlysis of the Data that can be found in the 
 5. Evaluate the model with the test dataset
 
 
-
 ## 1. LeNet5 with BigDL
 
 Code inspired by https://github.com/intel-analytics/BigDL/blob/main/python/dllib/examples/lenet/lenet.py
 
+We found out that functions and methods implemented in the bigdl.dllib library are sometimes pretty different from original keras methods and functions which complicated the building of different models implement the bigdl.dllib library.
+
+Considering these difficulties, we decided to build the lenet model implement the bigdl.dllib library and two other different models using tensorflow
+
+
 ## 2. Generic CovNet
 
 Code inspired by https://www.kaggle.com/code/karnikakapoor/pneumonia-diagnosis-convnet-model
+
 
 ## 3. ResNet50
 
@@ -43,7 +48,22 @@ ResNet-50 is a convolutional neural network that is 50 layers deep.
 
 Code inspired by https://www.kaggle.com/code/danushkumarv/pneumonia-detection-resnet
 
+
 ## Conclusions
+
+We observe that the model can still improve a lot since we are obtained a pretty high Loss. However, the accuracy obtained is not so bad. This shows the potential of this model, with further training and using more data, we could expect some promising results
+
+The results of this model are very good (84.8% accuracy).
+
+163/163 [==============================] - 1149s 7s/step - loss: 0.1887 - accuracy: 0.9237
+Train Loss:  0.1886528730392456
+Train Accuracy:  0.9236963391304016
+312/312 [==============================] - 142s 456ms/step - loss: 0.2596 - accuracy: 0.8958
+
+Test loss:  0.2596129775047302
+Test Accuracy:  0.8958333134651184
+
+Resnet50 shows that we could create a model with a great number of layers and reach very good results, as we can see in the accuracy of the train dataset
 
 Still, the convnet model does not reach de accuracy levels of the resnet50 model (around 89% accuracy on the test set).
 
